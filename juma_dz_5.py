@@ -26,3 +26,22 @@ def my_sum():
 
 
 my_sum()
+
+# ------------------Вариант---------------------------------
+
+def sum_num():
+    s = 0
+    while True:
+        num = input("Введите числа через пробел : -для выхода 'q'.  ").split()
+        for el in num:
+            if el == 'q':
+                return s
+            else:
+                try:
+                    s += int(el)
+                except ValueError:
+                    print("Для выхода 'q'.")
+        print(f"Результат-{s}")
+
+
+print(sum_num())

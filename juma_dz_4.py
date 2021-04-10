@@ -6,16 +6,16 @@
 # Первый — возведение в степень с помощью оператора **.
 # Второй — более сложная реализация без оператора **, предусматривающая использование цикла.
 
-x = int(input("Введите положительное число:"))
-y = int(input("Введите целое отрицательное число:"))
+# x = int(input("Введите положительное число:"))
+# y = int(input("Введите целое отрицательное число:"))
 
 
-def my_func():
+def my_func(x, y):
     try:
         num = x ** y
-        return num
     except ValueError:
         return 'ValueError'
+    return num
 
 
-# print(my_func().__round__my_func(4))
+print(my_func())
